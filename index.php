@@ -23,7 +23,7 @@
             </div>
             <div class="flexcenter">
                 <div class="elements">
-                    <label class="flexcenter fructs label">
+                    <label class="flexcenter fructs label" id="fructs">
                         <input type="radio" name="tea" id="fructs" value="4" required>
                         <span class="dots dot9"></span>
                         Фруктовий чай
