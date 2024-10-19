@@ -1,3 +1,38 @@
+@font-face {
+    font-family: 'Wizland';
+    src: url('../fonts/Wizland.woff2') format('woff2'),
+        url('../fonts/Wizland.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    font-family: 'Wizland';
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 5px;
+    background: #c35f2d;
+    height: 16px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    /* removing default appearance */
+    -webkit-appearance: none;
+    appearance: none; 
+    /* creating a custom design */
+    height: 15px;
+    width: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 2px solid #d47e45;
+    /*  slider progress trick  */
+    box-shadow: -0.5px 0 0 3px #d47e45;
+}
+
 body {
     display: flex;
     align-items: center;
@@ -31,6 +66,7 @@ button {
     border: 2px solid #d47e45;
     border-radius: 3px;
     transition: all .4s ease;
+    font-size: 20px;
 }
 
 button:hover {
@@ -175,7 +211,11 @@ input[type="radio"]:checked+.dots {
     color: aliceblue;
 }
 
-.lemon, .imbyr, .milk, .koritsa, .vanil {
+.lemon,
+.imbyr,
+.milk,
+.koritsa,
+.vanil {
     top: 370px;
 }
 
@@ -196,10 +236,12 @@ input[type="radio"]:checked+.dots {
 }
 
 .vanil {
-    left: 560px; 
+    left: 560px;
 }
 
-.tort, .sweet, .croisant {
+.tort,
+.sweet,
+.croisant {
     top: 590px;
 }
 
@@ -227,4 +269,3 @@ input[type="radio"]:checked+.dots {
     top: 40%;
     left: 40%;
 }
-

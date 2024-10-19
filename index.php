@@ -11,11 +11,14 @@
         <div class="elements">
             <div class="ranges">
                 <input type="range" value="50" min="50" max="1000" step="50" name="water" id="" oninput="this.nextElementSibling.value = this.value">
-                <output>50</output><br>
+                <output>50</output>
+                <output>ml Води</output><br>
                 <input type="range" name="sugar" value="1" min="1" step="1" max="6" id="" oninput="this.nextElementSibling.value = this.value">
-                <output>1</output><br>
+                <output>1</output>
+                <output>Ложок цукру</output><br>
                 <input type="range" name="honey" min="0" max="5" step="1"  id="" oninput="this.nextElementSibling.value = this.value">
-                <output>0</output><br>
+                <output>0</output>
+                <output>Ложок меду</output><br>
             </div>
             <div class="polky">
                 <img src="img/polka.jpg" alt="" class="polka1">
