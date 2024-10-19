@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="for.php" method="post">
+    <form action="Tea.php" method="post">
         <input type="range" value="50" min="50" max="1000" step="50" name="water" id="" oninput="this.nextElementSibling.value = this.value">
         <output>50</output><br>
         <input type="range" name="sugar" value="1" min="1" step="1" max="6" id="" oninput="this.nextElementSibling.value = this.value">
@@ -31,11 +31,11 @@
         <label for="koritsa">Koritsa</label>
         <input type="checkbox" name="dodatky" id="vanil" value="1">
         <label for="vanil">Vanil</label><br>    
-        <input type="checkbox" name="sweet" id="tort" value="70">
+        <input type="checkbox" name="tort" id="tort" value="70">
         <label for="tort">Тортик</label>
         <input type="checkbox" name="sweet" id="sweets" value="38">
         <label for="sweets">Цукерки</label>
-        <input type="checkbox" name="sweet" id="croisant" value="40">
+        <input type="checkbox" name="croisant" id="croisant" value="40">
         <label for="croisant">Круасан</label><br>
         <input type="radio" name="time" id="time1" value="35" required>
         <label for="time1">Легкий</label>
@@ -80,15 +80,16 @@
                 }
             }
 
+            if(isset($_POST["tort"])) {
+                $prise+=70;
+            }
+            
             if(isset($_POST["sweet"])) {
-                $sweet = $_POST["sweet"];
-                if($sweet==70) {
-                    $prise+=70;
-                } else if($sweet==38) {
-                    $prise+=38;
-                } else {
-                    $prise+=40;
-                }
+                $prise+=38;
+            }
+             
+            if(isset($_POST["croisant"])) {
+                $prise+=40;
             }
 
             for($water; $water>0; $water-=$cup) {
