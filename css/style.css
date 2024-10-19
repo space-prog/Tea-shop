@@ -3,14 +3,15 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    overflow: hidden;
 }
 
-input[type="checkbox"], input[type="radio"] {
+input[type="checkbox"],
+input[type="radio"] {
     appearance: none;
     width: 30px;
     height: 30px;
     border-radius: 3px;
-    background-color: #fff;
     position: relative;
     cursor: pointer;
 }
@@ -18,6 +19,23 @@ input[type="checkbox"], input[type="radio"] {
 label {
     position: relative;
     display: inline-block;
+}
+
+button {
+    position: absolute;
+    top: 47%;
+    left: 46.5%;
+    z-index: 100;
+    padding: 10px 35px;
+    background-color: #fff;
+    border: 2px solid #d47e45;
+    border-radius: 3px;
+    transition: all .4s ease;
+}
+
+button:hover {
+    background-color: #d47e45;
+    color: #fff;
 }
 
 .dots {
@@ -33,69 +51,70 @@ label {
 }
 
 .dot {
-    background: url(../img/lemon.png) center/cover;  
+    background: url(../img/lemon.png) center/cover;
 }
 
 .dot2 {
-    background: url(../img/imbyr.png) center/cover;  
+    background: url(../img/imbyr.png) center/cover;
 }
 
 .dot3 {
-    background: url(../img/moloko-removebg-preview.png) center/cover;  
+    background: url(../img/moloko-removebg-preview.png) center/cover;
 }
 
 .dot4 {
-    background: url(../img/koritsa.png) no-repeat center/contain;  
+    background: url(../img/koritsa.png) no-repeat center/contain;
 }
 
 .dot5 {
-    background: url(../img/vanilla.webp) center/cover;  
+    background: url(../img/vanilla.webp) center/cover;
 }
 
 .dot6 {
-    background: url(../img/tort.png) center/cover; 
+    background: url(../img/tort.png) center/cover;
 }
 
 .dot7 {
-    background: url(../img/sweets.png) center/cover; 
+    background: url(../img/sweets.png) center/cover;
 }
 
 .dot8 {
-    background: url(../img/croisant.webp) no-repeat center/contain; 
+    background: url(../img/croisant.webp) no-repeat center/contain;
 }
 
 .dot9 {
-    background: url(../img/fruit-tea.jpg) no-repeat center/contain; 
+    background: url(../img/fruit-tea.jpg) no-repeat center/contain;
 }
 
 .dot10 {
-    background: url(../img/black-tea.png) no-repeat center/contain; 
+    background: url(../img/black-tea.png) no-repeat center/contain;
 }
 
 .dot11 {
-    background: url(../img/green-tea.png) no-repeat center/contain; 
+    background: url(../img/green-tea.png) no-repeat center/contain;
 }
 
 .dot12 {
-    background: url(../img/grass-tea.png) no-repeat center/contain; 
+    background: url(../img/grass-tea.png) no-repeat center/contain;
 }
 
 .dot13 {
-    background: url(../img/easy-tea.png) no-repeat center/contain; 
+    background: url(../img/easy-tea.png) no-repeat center/contain;
     filter: grayscale(0%);
 }
 
 .dot14 {
-    background: url(../img/easy-tea-removebg-preview.png) no-repeat center/contain; 
+    background: url(../img/easy-tea-removebg-preview.png) no-repeat center/contain;
     filter: grayscale(0%);
 }
 
 .dot15 {
-    background: url(../img/hard-tea.png) no-repeat center/contain; 
+    background: url(../img/hard-tea.png) no-repeat center/contain;
     filter: grayscale(0%);
 }
 
-input[type="checkbox"]:checked + .dots, input[type="radio"]:checked + .dots {
+input[type="checkbox"]:checked+.dots,
+input[type="radio"]:checked+.dots {
     filter: grayscale(0%) drop-shadow(0 0 4px);
 }
 
@@ -103,4 +122,109 @@ input[type="checkbox"]:checked + .dots, input[type="radio"]:checked + .dots {
     display: flex;
     align-items: center;
     column-gap: 20px;
+
 }
+
+.polky {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.polky img {
+    height: 100vh;
+    width: 750px;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+}
+
+.polka2 {
+    right: 0;
+}
+
+.polka {
+    left: 0;
+
+}
+
+.fructs {
+    top: 150px;
+    left: 40px;
+}
+
+.black {
+    top: 150px;
+    left: 220px;
+}
+
+.green {
+    top: 150px;
+    left: 370px;
+}
+
+.travany {
+    top: 150px;
+    left: 530px;
+}
+
+.label {
+    position: absolute;
+    color: aliceblue;
+}
+
+.lemon, .imbyr, .milk, .koritsa, .vanil {
+    top: 370px;
+}
+
+.lemon {
+    left: 40px;
+}
+
+.imbyr {
+    left: 180px;
+}
+
+.milk {
+    left: 300px;
+}
+
+.koritsa {
+    left: 430px;
+}
+
+.vanil {
+    left: 560px; 
+}
+
+.tort, .sweet, .croisant {
+    top: 590px;
+}
+
+.tort {
+    left: 60px;
+}
+
+.sweet {
+    left: 180px;
+}
+
+.croisant {
+    left: 310px;
+}
+
+.ranges {
+    position: absolute;
+    top: 30%;
+    left: 46%;
+    z-index: 100;
+}
+
+.mitsnist {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+
