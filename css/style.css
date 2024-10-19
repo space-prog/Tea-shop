@@ -1,0 +1,106 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    background-color: #fff;
+    position: relative;
+    cursor: pointer;
+}
+
+label {
+    position: relative;
+    display: inline-block;
+}
+
+.dots {
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    filter: grayscale(100%) drop-shadow(0 0 0);
+    transition: all .3s ease;
+}
+
+.dot {
+    background: url(../img/lemon.png) center/cover;  
+}
+
+.dot2 {
+    background: url(../img/imbyr.png) center/cover;  
+}
+
+.dot3 {
+    background: url(../img/moloko-removebg-preview.png) center/cover;  
+}
+
+.dot4 {
+    background: url(../img/koritsa.png) no-repeat center/contain;  
+}
+
+.dot5 {
+    background: url(../img/vanilla.webp) center/cover;  
+}
+
+.dot6 {
+    background: url(../img/tort.png) center/cover; 
+}
+
+.dot7 {
+    background: url(../img/sweets.png) center/cover; 
+}
+
+.dot8 {
+    background: url(../img/croisant.webp) no-repeat center/contain; 
+}
+
+.dot9 {
+    background: url(../img/fruit-tea.jpg) no-repeat center/contain; 
+}
+
+.dot10 {
+    background: url(../img/black-tea.png) no-repeat center/contain; 
+}
+
+.dot11 {
+    background: url(../img/green-tea.png) no-repeat center/contain; 
+}
+
+.dot12 {
+    background: url(../img/grass-tea.png) no-repeat center/contain; 
+}
+
+.dot13 {
+    background: url(../img/easy-tea.png) no-repeat center/contain; 
+    filter: grayscale(0%);
+}
+
+.dot14 {
+    background: url(../img/easy-tea-removebg-preview.png) no-repeat center/contain; 
+    filter: grayscale(0%);
+}
+
+.dot15 {
+    background: url(../img/hard-tea.png) no-repeat center/contain; 
+    filter: grayscale(0%);
+}
+
+input[type="checkbox"]:checked + .dots, input[type="radio"]:checked + .dots {
+    filter: grayscale(0%) drop-shadow(0 0 4px);
+}
+
+.flexcenter {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
