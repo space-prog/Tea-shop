@@ -26,10 +26,10 @@
             </div>
             <div class="flexcenter">
                 <div class="elements">
-                    <label class="flexcenter fructs label" id="fructs">
+                    <label class="flexcenter fructs label" id="fructsLabel">
                         <input type="radio" name="tea" id="fructs" value="4" required>
                         <span class="dots dot9"></span>
-                        Фруктовий чай
+                        Фруктовий чай                      
                     </label>
                     <label class="flexcenter black label">
                         <input type="radio" name="tea" id="black" value="2" required>
@@ -112,6 +112,6 @@
             <button type="submit">Налляти</button>
                 </form>
         </div>
-        <script src="js/index.js"></script>
+        <!-- <script src="js/index.js"></script> -->
 </body>
 </html>
