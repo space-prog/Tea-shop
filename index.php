@@ -41,11 +41,11 @@
                         <span class="dots dot11"></span>
                         Зелений чай
                     </label>
-                    <label class="flexcenter travany label">
+                    <!-- <label class="flexcenter travany label">
                         <input type="radio" name="tea" id="travany" value="6" required>
                         <span class="dots dot12"></span>
                         Трав'яний чай
-                    </label>
+                    </label> -->
                                 </div><br>
                                 <div class="flexcenter">
                     <label class="flexcenter lemon label">
@@ -68,11 +68,11 @@
                         <span class="dot4 dots"></span>
                         Кориця
                     </label>
-                    <label class="flexcenter vanil label">
+                    <!-- <label class="flexcenter vanil label">
                         <input type="checkbox" name="dodatky" id="vanil" value="1">
                         <span class="dot5 dots"></span>
                         Ваниль
-                    </label>
+                    </label> -->
                                 </div><br>
                                 <div class="flexcenter">
                     <label class="flexcenter label tort">
@@ -91,7 +91,7 @@
                         Круасан
                     </label>
                                 </div><br>
-                                <div class="flexcenter mitsnist">
+                                <div class=" mitsnist">
                     <label class="flexcenter">
                         <input type="radio" name="time" id="time1" value="35" required>
                         <span class="dots dot13"></span>

@@ -1,3 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/output.css">
+    <title>Document</title>
+</head>
+<body>
+
+
 <?php
         if($_POST) {
             $water = $_POST["water"];
@@ -46,7 +57,7 @@
             }
 
             for($water; $water>0; $water-=$cup) {
-                echo "$water<br>";
+                echo "Залишилося $water мл води <br>";
                 $leftSugar=round((($cup*$sugar)/$water),1);
                 $leftTime=round((($cup*$time)/$water),1);
                 if($honey!="0") {
@@ -59,18 +70,18 @@
                     $sugar -= $leftSugar;
                     $time -= $leftTime;
                     // $time -= $leftTime;
-                    echo "$leftSugar цукру";
+                    echo "Залишилося $leftSugar цукру";
                     if($honey!="0") {
                         $honey -= $leftHoney;
-                        echo "<p>$leftHoney honey</p>";
+                        echo "<p>Залишилося $leftHoney Меду</p>";
                     }
                     echo "<p>Опускаємо чайний пакетик на $leftTime секунд</p>";
                     
                 } else {
-                    echo "$sugar"; //закинули весь цукор 
+                    echo "Кинуто $sugar чайної ложки цукру"; //закинули весь цукор 
                     echo "<p>Опускаємо чайний пакетик на $time секунд</p>";
                     if($honey!="0") {
-                        echo "$honey honey<br>";
+                        echo "Кинуто $honey чайної ложки меду<br>";
                     }
                     
                 }
@@ -78,3 +89,5 @@
             echo "$prise грн<br>";
         }
     ?>
+</body>
+</html>

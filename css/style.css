@@ -11,6 +11,11 @@
     font-family: 'Wizland';
 }
 
+/* input[type="range"] {
+    appearance: none;
+    -webkit-appearance: none;
+}
+
 input[type="range"]::-webkit-slider-runnable-track {
     -webkit-appearance: none;
     appearance: none;
@@ -20,17 +25,53 @@ input[type="range"]::-webkit-slider-runnable-track {
 }
 
 input[type="range"]::-webkit-slider-thumb {
-    /* removing default appearance */
     -webkit-appearance: none;
     appearance: none; 
-    /* creating a custom design */
     height: 15px;
     width: 15px;
     background-color: #fff;
     border-radius: 50%;
     border: 2px solid #d47e45;
-    /*  slider progress trick  */
     box-shadow: -0.5px 0 0 3px #d47e45;
+} */
+
+input[type="range"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 20px;
+    border: none;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #d47e45;
+    border: 2px solid #d47e45;
+    border-radius: 50%;
+    height: 18px;
+    width: 18px;
+    margin-top: -7px;
+    box-shadow: calc(-100vmax - 18px) 0 0 100vmax #f2622d;
+    clip-path: polygon(100% 0,
+            2px 0,
+            0 7px,
+            -100vmax 7px,
+            -100vmax 11px,
+            0 11px,
+            2px 100%,
+            100% 100%);
+}
+
+
+input[type="range"]::-webkit-slider-runnable-track {
+    height: 4px;
+    border-radius: 4px;
+    border: 0px solid #fff;
+    box-shadow: 0px 0px 0px #353535;
+    background: #cecece;
 }
 
 body {
@@ -58,7 +99,7 @@ label {
 
 button {
     position: absolute;
-    top: 47%;
+    top: 57%;
     left: 46.5%;
     z-index: 100;
     padding: 10px 35px;
@@ -183,28 +224,24 @@ input[type="radio"]:checked+.dots {
 
 .polka {
     left: 0;
-
 }
 
 .fructs {
-    top: 150px;
-    left: 40px;
+    left: 100px;
 }
 
 .black {
-    top: 150px;
-    left: 220px;
+    left: 285px;
 }
 
 .green {
-    top: 150px;
-    left: 370px;
+    left: 440px;
 }
 
-.travany {
+/* .travany {
     top: 150px;
     left: 530px;
-}
+} */
 
 .label {
     position: absolute;
@@ -220,19 +257,19 @@ input[type="radio"]:checked+.dots {
 }
 
 .lemon {
-    left: 40px;
+    left: 100px;
 }
 
 .imbyr {
-    left: 180px;
+    left: 230px;
 }
 
 .milk {
-    left: 300px;
+    left: 340px;
 }
 
 .koritsa {
-    left: 430px;
+    left: 470px;
 }
 
 .vanil {
@@ -246,26 +283,115 @@ input[type="radio"]:checked+.dots {
 }
 
 .tort {
-    left: 60px;
+    left: 170px;
 }
 
 .sweet {
-    left: 180px;
+    left: 300px;
 }
 
 .croisant {
-    left: 310px;
+    left: 440px;
 }
 
 .ranges {
     position: absolute;
     top: 30%;
-    left: 46%;
+    left: 45%;
     z-index: 100;
 }
 
 .mitsnist {
     position: absolute;
     top: 40%;
-    left: 40%;
+    left: 47%;
+}
+
+.mitsnist label {
+    padding-bottom: 13px;
+}
+
+.fructs, .black, .green {
+    top: 150px;
+}
+
+@media (max-width: 1445px) {
+    .polky img {
+        width: 600px;
+    }
+
+    .tort,
+    .sweet,
+    .croisant {
+        top: 525px;
+    }
+
+    .tort {
+        left: 90px;
+    }
+
+    .sweet {
+        left: 220px;
+    }
+
+    .croisant {
+        left: 360px;
+    }
+
+    .lemon {
+        left: 45px;
+    }
+
+    .imbyr {
+        left: 180px;
+    }
+
+    .milk {
+        left: 289px;
+    }
+
+    .koritsa {
+        left: 420px;
+    }
+
+    .vanil {
+        left: 540px;
+    }
+
+    .lemon,
+    .imbyr,
+    .milk,
+    .koritsa,
+    .vanil {
+        top: 330px;
+    }
+
+    .ranges {
+        top: 25%;
+        left: 41.5%;
+    }
+
+    .fructs {
+        left: 45px;
+    }
+    
+    .black {
+        left: 230px;
+    }
+    
+    .green {
+        left: 380px;
+    }
+
+    .fructs, .black, .green {
+        top: 130px;
+    }
+
+    .mitsnist {
+        left: 46%;
+    }
+
+    button {
+        left: 45%;
+    }
 }
