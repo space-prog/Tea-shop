@@ -315,7 +315,7 @@ input[type="radio"]:checked+.dots {
     top: 150px;
 }
 
-@media (max-width: 1445px) {
+@media (max-width: 1366px) {
     .polky img {
         width: 600px;
     }
@@ -323,7 +323,7 @@ input[type="radio"]:checked+.dots {
     .tort,
     .sweet,
     .croisant {
-        top: 525px;
+        top: 61%;
     }
 
     .tort {
@@ -363,12 +363,12 @@ input[type="radio"]:checked+.dots {
     .milk,
     .koritsa,
     .vanil {
-        top: 330px;
+        top: 38%;
     }
 
     .ranges {
         top: 25%;
-        left: 41.5%;
+        left: 43.2%;
     }
 
     .fructs {
@@ -384,7 +384,7 @@ input[type="radio"]:checked+.dots {
     }
 
     .fructs, .black, .green {
-        top: 130px;
+        top: 14%;
     }
 
     .mitsnist {
@@ -392,6 +392,11 @@ input[type="radio"]:checked+.dots {
     }
 
     button {
+        top: 65%;
         left: 45%;
+    }
+
+    input[type="range"] {
+        width: 63px;
     }
 }
