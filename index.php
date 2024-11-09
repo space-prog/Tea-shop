@@ -26,18 +26,18 @@
             </div>
             <div class="flexcenter">
                 <div class="elements">
-                    <label class="flexcenter fructs label" id="fructsLabel">
-                        <input type="radio" name="tea" id="fructs" value="4" required>
+                    <label class="flexcenter fructs label teaSort" id="fructsLabel">
+                        <input type="radio" class="InputSort" name="tea" id="fructs" value="4" required>
                         <span class="dots dot9"></span>
                         Фруктовий чай                      
                     </label>
-                    <label class="flexcenter black label">
-                        <input type="radio" name="tea" id="black" value="2" required>
+                    <label class="flexcenter black label teaSort">
+                        <input type="radio" class="InputSort" name="tea" id="black" value="2" required>
                         <span class="dots dot10"></span>
                         Чорний чай
                     </label>
-                    <label class="flexcenter green label">
-                        <input type="radio" name="tea" id="green" value="3" required>
+                    <label class="flexcenter green label teaSort">
+                        <input type="radio" class="InputSort" name="tea" id="green" value="3" required>
                         <span class="dots dot11"></span>
                         Зелений чай
                     </label>
@@ -48,23 +48,23 @@
                     </label> -->
                                 </div><br>
                                 <div class="flexcenter">
-                    <label class="flexcenter lemon label">
-                        <input type="checkbox" name="dodatky" id="lemon" value="4">
+                    <label class="flexcenter lemon label dodatky">
+                        <input type="checkbox" name="dodatky" class="DodatkyInput" id="lemon" value="4">
                         <span class="dot dots"></span>
                         Лимон
                     </label>
-                    <label class="flexcenter imbyr label">
-                        <input type="checkbox" name="dodatky" id="imbyr" value="3">
+                    <label class="flexcenter imbyr label dodatky">
+                        <input type="checkbox" name="dodatky" class="DodatkyInput" id="imbyr" value="3">
                         <span class="dot2 dots"></span>
                         Імбир
                     </label>
-                    <label class="flexcenter milk label">
-                        <input type="checkbox" name="dodatky" id="milk" value="6">
+                    <label class="flexcenter milk label dodatky">
+                        <input type="checkbox" name="dodatky" class="DodatkyInput" id="milk" value="6">
                         <span class="dot3 dots"></span>
                         Молоко
                     </label>
-                    <label class="flexcenter koritsa label">
-                        <input type="checkbox" name="dodatky" id="koritsa" value="2">
+                    <label class="flexcenter koritsa label dodatky">
+                        <input type="checkbox" name="dodatky" class="DodatkyInput" id="koritsa" value="2">
                         <span class="dot4 dots"></span>
                         Кориця
                     </label>
@@ -112,6 +112,6 @@
             <button type="submit">Налляти</button>
                 </form>
         </div>
-        <!-- <script src="js/index.js"></script> -->
+        <script src="js/index.js"></script>
 </body>
 </html>
