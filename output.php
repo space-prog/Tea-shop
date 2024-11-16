@@ -90,6 +90,7 @@
                 echo "$prise грн<br>";
             }
         ?>
+<p class="more"><a href="index.php">Хочу ще чаю</a></p>
 </div>
 </body>
 </html>
