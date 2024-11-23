@@ -27,17 +27,17 @@
             <div class="flexcenter">
                 <div class="elements">
                     <label class="flexcenter fructs label teaSort" id="fructsLabel">
-                        <input type="radio" class="InputSort" name="tea" id="fructs" value="4" required>
+                        <input type="radio" class="InputSort" name="tea" id="fructs" value="fruts" required>
                         <span class="dots dot9"></span>
                         Фруктовий чай                      
                     </label>
                     <label class="flexcenter black label teaSort">
-                        <input type="radio" class="InputSort" name="tea" id="black" value="2" required>
+                        <input type="radio" class="InputSort" name="tea" id="black" value="black" required>
                         <span class="dots dot10"></span>
                         Чорний чай
                     </label>
                     <label class="flexcenter green label teaSort">
-                        <input type="radio" class="InputSort" name="tea" id="green" value="3" required>
+                        <input type="radio" class="InputSort" name="tea" id="green" value="green" required>
                         <span class="dots dot11"></span>
                         Зелений чай
                     </label>

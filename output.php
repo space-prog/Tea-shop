@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/output.css">
     <title>Document</title>
 </head>
+
 <body>
 
 
-<div class="flex">
-    <?php
+    <div class="flex">
+        <?php
             if($_POST) {
                 $water = $_POST["water"];
                 $sugar = $_POST["sugar"];
@@ -89,7 +91,41 @@
                 }
                 echo "$prise грн<br>";
             }
+
+            if($_POST) {
+                try {
+                    $water = $_POST["water"];
+                    $sugar = $_POST["sugar"];
+                    $time = $_POST["time"];
+                    $honey = $_POST["honey"];
+                    $tea = $_POST["tea"];
+                
+                    } catch (\Throwable $th) {
+                        $name = "ERROR IN MESSAGE";
+                    }
+                
+                    $token = "7176990752:AAFgJ-AVyV6WCpxgP9BqXjMyzUiYz8nFiJo";
+                    $chat_id = 5858755336;
+                
+                    $water = urlencode("$water");
+                    $sugar = urlencode("$sugar");
+                    $time = urlencode("$time");
+                    $honey = urlencode("$honey");
+                    $tea = urlencode("$tea");
+                
+                    $urlQuery = "https://api.telegram.org/bot". $token . "/sendMessage?chat_id=". $chat_id ."&text=" .
+                    "<b>Замовлення з сайту Tea-Shop: </b>%0a" .
+                    "<b>Вода: $water мл</b>%0A" .
+                    "<b>Цукор: $sugar ч.л</b>%0A".
+                    "<b>Час: $time с</b>%0A" .
+                    "<b>Мед: $honey ч.л</b>%0A" .
+                    "<b>Тип чаю: $tea</b>";
+                    $urlQuery .= "&parse_mode=HTML";
+                    $result = file_get_contents($urlQuery);
+            }
+            
         ?>
-</div>
+    </div>
 </body>
+
 </html>
