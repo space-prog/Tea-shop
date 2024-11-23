@@ -24,3 +24,22 @@ body {
     backdrop-filter: blur(30px);
     background-color: rgba(0, 0, 0, 0.4);
 }
+
+.more a {
+    font-family: "Dited";
+    color: #fff;
+    background-color: green;
+    display: inline-block;
+    padding: 10px 40px;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+.more {
+    text-align: center;
+}
+
+.more a:hover {
+    transform: scale(1.1);
+}
