@@ -93,12 +93,31 @@
             }
 
             if($_POST) {
+                if(isset($_POST["sweet"])) {
+                    $sweet = $_POST["sweet"];
+                } else {
+                    $sweet = "";
+                }
+
+                if(isset($_POST["tort"])) {
+                    $tort = $_POST["tort"];
+                } else {
+                    $tort = "";
+                }
+
+                if(isset($_POST["croisant"])) {
+                    $croisant = $_POST["croisant"];
+                } else {
+                    $croisant = "";
+                }
+                
                 try {
                     $water = $_POST["water"];
                     $sugar = $_POST["sugar"];
                     $time = $_POST["time"];
                     $honey = $_POST["honey"];
                     $tea = $_POST["tea"];
+                    $dodatky = $_POST["dodatky"];
                 
                     } catch (\Throwable $th) {
                         $name = "ERROR IN MESSAGE";
@@ -112,6 +131,24 @@
                     $time = urlencode("$time");
                     $honey = urlencode("$honey");
                     $tea = urlencode("$tea");
+                    $dodatky = urlencode("$dodatky");
+                    $croisant = urlencode("$croisant");
+                    $tort = urlencode("$tort");
+                    $sweet = urlencode("$sweet");
+
+                    $croisant = "Круасан";
+                    $tort = "Торт";
+                    $sweet = "Цукерки";
+
+                    if($dodatky==2) {
+                        $dodatky = "Кориця";
+                    } else if($dodatky==3) {
+                        $dodatky = "Імбир";
+                    } else if($dodatky==4) {
+                        $dodatky = "Лимон";
+                    } else {
+                        $dodatky = "Молоко";
+                    }
                 
                     $urlQuery = "https://api.telegram.org/bot". $token . "/sendMessage?chat_id=". $chat_id ."&text=" .
                     "<b>Замовлення з сайту Tea-Shop: </b>%0a" .
@@ -119,7 +156,9 @@
                     "<b>Цукор: $sugar ч.л</b>%0A".
                     "<b>Час: $time с</b>%0A" .
                     "<b>Мед: $honey ч.л</b>%0A" .
-                    "<b>Тип чаю: $tea</b>";
+                    "<b>Тип чаю: $tea</b>%0A" .
+                    "<b>Додатки: $dodatky</b>%0A" .
+                    "<b>Смаколики: $croisant, $tort, $sweet";
                     $urlQuery .= "&parse_mode=HTML";
                     $result = file_get_contents($urlQuery);
             }

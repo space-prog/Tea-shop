@@ -55,7 +55,7 @@
                     </label>
                     <label class="flexcenter imbyr label dodatky">
                         <input type="checkbox" name="dodatky" class="DodatkyInput" id="imbyr" value="3">
-                        <span class="dot2 dots"></span>
+                        <span class="dot2 dots"></span> 
                         Імбир
                     </label>
                     <label class="flexcenter milk label dodatky">
